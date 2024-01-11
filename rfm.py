@@ -18,8 +18,6 @@
 # pazarlama stratejileri belirlemek istiyor.
 
 # Veri Seti Hikayesi
-# https://archive.ics.uci.edu/ml/datasets/Online+Retail+II
-
 # Online Retail II isimli veri seti İngiltere merkezli online bir satış mağazasının
 # 01/12/2009 - 09/12/2011 tarihleri arasındaki satışlarını içeriyor.
 
@@ -45,7 +43,7 @@ pd.set_option('display.max_columns', None)
 # pd.set_option('display.max_rows', None)
 pd.set_option('display.float_format', lambda x: '%.3f' % x)
 
-df_ = pd.read_excel("/Users/mvahit/Desktop/DSMLBC4/datasets/online_retail_II.xlsx", sheet_name="Year 2009-2010")
+df_ = pd.read_excel("online_retail_II.xlsx", sheet_name="Year 2009-2010")
 df = df_.copy()
 df.head()
 df.shape
